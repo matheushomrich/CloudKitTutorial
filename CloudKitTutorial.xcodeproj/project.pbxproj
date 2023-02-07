@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4E5EA3592992AEC700228A09 /* CloudKitTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EA3582992AEC700228A09 /* CloudKitTutorialApp.swift */; };
-		4E5EA35B2992AEC700228A09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EA35A2992AEC700228A09 /* ContentView.swift */; };
 		4E5EA35D2992AEC900228A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5EA35C2992AEC900228A09 /* Assets.xcassets */; };
 		4E5EA3602992AEC900228A09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5EA35F2992AEC900228A09 /* Preview Assets.xcassets */; };
+		4E5EA3682992AF1D00228A09 /* CloudKitUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EA3672992AF1D00228A09 /* CloudKitUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E5EA3552992AEC700228A09 /* CloudKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5EA3582992AEC700228A09 /* CloudKitTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitTutorialApp.swift; sourceTree = "<group>"; };
-		4E5EA35A2992AEC700228A09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E5EA35C2992AEC900228A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5EA35F2992AEC900228A09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E5EA3672992AF1D00228A09 /* CloudKitUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserView.swift; sourceTree = "<group>"; };
+		4E5EA3692992AF7900228A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4E5EA36A2992AF9800228A09 /* CloudKitTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitTutorial.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		4E5EA3572992AEC700228A09 /* CloudKitTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				4E5EA36A2992AF9800228A09 /* CloudKitTutorial.entitlements */,
+				4E5EA3692992AF7900228A09 /* Info.plist */,
+				4E5EA3662992AEFB00228A09 /* CloudKit */,
 				4E5EA3582992AEC700228A09 /* CloudKitTutorialApp.swift */,
-				4E5EA35A2992AEC700228A09 /* ContentView.swift */,
 				4E5EA35C2992AEC900228A09 /* Assets.xcassets */,
 				4E5EA35E2992AEC900228A09 /* Preview Content */,
 			);
@@ -65,6 +69,14 @@
 				4E5EA35F2992AEC900228A09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E5EA3662992AEFB00228A09 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				4E5EA3672992AF1D00228A09 /* CloudKitUserView.swift */,
+			);
+			path = CloudKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5EA35B2992AEC700228A09 /* ContentView.swift in Sources */,
+				4E5EA3682992AF1D00228A09 /* CloudKitUserView.swift in Sources */,
 				4E5EA3592992AEC700228A09 /* CloudKitTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,12 +276,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitTutorial/CloudKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitTutorial/Preview Content\"";
 				DEVELOPMENT_TEAM = 478594C4R9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudKitTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +307,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitTutorial/CloudKitTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudKitTutorial/Preview Content\"";
 				DEVELOPMENT_TEAM = 478594C4R9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudKitTutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
